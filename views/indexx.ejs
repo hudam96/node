@@ -43,8 +43,7 @@
     <div class="row justify-content-center align-items-center h-100">
         <div v-for="x in arr" class="col-12">
             <div class="card bg-dark text-white">
-                <img class="card-img" src=""
-                     alt="Card image">
+                <img class="card-img" v-bind:src="x.url" alt="Card image">
                 <div class="card-img-overlay">
                     <h5 class="card-title">{{x.name}}</h5>
                     <p class="card-text">{{x.des}}</p>
